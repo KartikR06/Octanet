@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Langding Page</title>
+	<style type="text/css">
+		*{
+			padding: 0 ;
+			margin: 0 ;
+			box-sizing: border-box;
+		}
+		header{
+			width: 100%;
+			height:100vh;
+			background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) 
+			,url(peakpx.jpg);
+			background-size: cover;
+			font-family: sans-serif;
+		}
+
+		nav{
+			width: 100%;
+			height: 100px;
+			
+			color: white;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		 .logo{
+			font-size: 100px;
+			
+		}
+
+		.menu a{ 
+			text-decoration: none;
+			color: white;	
+			padding: 10px 20px;
+			font-size: 20px;
+			position: relative;
+		}
+
+		.menu a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width:0px;
+			height: 40px;
+			border-bottom: 2px solid olive;
+			transition: 0.1s linear;
+		}
+
+		.menu a:hover:before{
+			width: 90%;
+		}
+
+		.register a{ 
+			text-decoration: none;
+			color: white;	
+			padding: 7px 15px;
+			font-size: 20px;
+			background: olive;
+			border-radius: 8px;
+			transition: 0.4s;
+		}
+
+		.register a:hover{
+			background: transparent;
+			border: 1px solid olive;
+
+		}
+
+		.h-txt{
+			color: white;
+			max-width: 650%;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			text-align: center;
+			transform: translate(-50% , -59%);
+		}
+
+		.h-txt span{
+			font-size: 30px;
+			letter-spacing: 5px;
+		}
+		.h-txt h1{
+			font-size: 3.5em;
+		}
+		.h-txt a{
+			text-decoration: none;
+			background-color: olive;
+			color: white;
+			padding: 10px 20px;
+			letter-spacing: 5px;
+			border-radius: 8px;
+		}
+		.h-txt  a:hover{
+			background: transparent;
+			border: 1px solid olive;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div name = "logo">Thomas Cook</div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">Hill Station</a>
+				<a href="#">Best offer</a>
+				<a href="#">Our sities</a>
+				<a href="#">Contact</a>
+			</div>
+
+			<div class="register">
+				<a href="#">Register</a> 
+			</div>
+		</nav>
+		<section class="h-txt">
+			<span>Enjoy</span>
+			<h1>International Travel Agency</h1>
+			<p>Travel.....!! Before you ran out of time</p>
+			<br>
+			<a href="#">Book your trip</a>
+		</section>
+	</header>
+
+</body>
+</html>
